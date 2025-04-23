@@ -16,6 +16,13 @@
     font-family: 'Noto Sans', sans-serif;
   }
 
+  .main-headings {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-block: 5rem 2rem;
+    border-bottom: 1px solid rgb(227, 227, 227);
+  }
+
   .backdrop {
     
     position: fixed;
@@ -155,6 +162,19 @@
 
     }
 
+    .project-section__heading {
+      text-decoration: none;
+      padding: 0.2rem 1rem;
+      margin-bottom: 5px;
+    }
+
+    .underline {
+      width: 98%;
+      height: 1px;
+      background-color: #6f6d6d; /* black line */
+      margin: 20px 30px 20px 15px;
+    }
+    
     .project-section__projects {
       display: flex;
       flex-direction: column;
@@ -178,6 +198,68 @@
       position: absolute;
       top: 0;
       left: 0;
+    }
+
+    /* ? About section ? */
+    .about-section {
+      margin-inline: 2rem;
+    }
+
+    .about-section__para {
+      width: 98%;
+      left: 15px;
+      padding-top: 1rem;
+      font-weight: 300;
+    }
+
+    .about-section__teams {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 2rem;
+    }
+
+    .about-section__team {
+      box-shadow: 0px 0px 10px rgb(172, 172, 172);
+      margin-bottom: 1rem;
+    }
+
+    .about-section__team-image {
+      width: 100%;
+    }
+
+    .about-section__team-name {
+      padding: 0.5rem 1rem;
+      font-weight: 300;
+      font-size: 1.4rem;
+    }
+
+    .about-section__team-position {
+      padding: 0.5rem 1rem;
+      font-weight: 500;
+      font-size: 1rem;
+      color: #979393;
+    }
+
+    .about-section__team-description {
+      padding: 0.5rem 1rem;
+      font-weight: 300;
+      font-size: 0.8rem;
+    }
+
+    .about-section__team-contact {
+      padding: 0.5rem 1rem;
+    }
+
+    .about-section__team-contact-button {
+      font-size: 0.9rem;
+      padding-block: 2rem;
+      width: 100%;
+      border: none;
+    }
+
+    .about-section__team-contact-button:hover {
+      background-color: rgb(182, 182, 182);
     }
 
 
@@ -233,10 +315,23 @@
       width: calc(50% - 8px);
     }
 
+    .about-section__teams {
+      flex-flow: row wrap;
+    }
+
+    .about-section__team{
+      width: calc(50% - 0.5rem);
+    }
+  }
+
 
     @media (min-width:64rem) {
       .project-section__project  {
         width: calc(25% - 8px);
       }
+
+      .about-section__team {
+        width: calc(25% - 0.5rem);
+      }
     }
-  }
+  
