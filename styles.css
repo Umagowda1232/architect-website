@@ -149,6 +149,38 @@
     }
 
 
+    /* ? Project Section ?*/
+    .project-section {
+      margin-inline: 2rem;
+
+    }
+
+    .project-section__projects {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-inline: 1rem;
+    }
+
+    .project-section__project {
+      position: relative;
+    }
+
+    .project-section__project-image {
+      width: 100%;
+    }
+
+    .image-name {
+      color: white;
+      background-color: black;
+      font-size: 14px;
+      padding: 12px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+
 
   /* ? Desktop Code */
   @media (min-width:38rem) {
@@ -191,5 +223,20 @@
       font-weight: 400;
       font-size: 2rem;
       
+    }
+
+    .project-section__projects {
+      flex-flow: row wrap;
+    }
+
+    .project-section__project {
+      width: calc(50% - 8px);
+    }
+
+
+    @media (min-width:64rem) {
+      .project-section__project  {
+        width: calc(25% - 8px);
+      }
     }
   }
